@@ -46,6 +46,10 @@ function takePicture (success, error, opts) {
         };
 
         document.body.appendChild(input);
+
+        // fix: hide and click input
+        input.click();
+        input.style.visibility = "hidden";
     }
 }
 
